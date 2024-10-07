@@ -16,7 +16,7 @@ class MySql(Stack):
                 instance_type = None,       ## ec2.InstanceType
                 engine_version = None,      ## MySQL Engine Version
                 **kwargs) -> None:
-        super().__init__(app, id, **kwargs)
+        super().__init__(scope, id, **kwargs)
 
         azs = Fn.get_azs()
 
